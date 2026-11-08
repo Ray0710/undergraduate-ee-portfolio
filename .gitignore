@@ -1,0 +1,14 @@
+# Vivado-generated output
+.Xil/
+xsim.dir/
+*.jou
+*.log
+*.wdb
+*.dcp
+*.bit
+*.pb
+*.str
+*.rpt
+projects/fpga-gaussian-noise-generator/project/
+projects/fpga-gaussian-noise-generator/gaussian_output.txt
+projects/fpga-gaussian-noise-generator/math_unit_output.txt
