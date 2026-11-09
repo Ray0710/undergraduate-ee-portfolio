@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-11-09T16:54:47+08:00",
+  "requested_seconds": 60.0,
+  "elapsed_seconds": 60.001521899946965,
+  "bytes_received": 5993520,
+  "longest_read_gap_seconds": 0.046607499942183495,
+  "capture_error": null,
+  "packets": 499459,
+  "skipped_bytes": 10,
+  "trailing_bytes": 2,
+  "sequence_discontinuities": 0,
+  "first_sequence": 26676,
+  "last_sequence": 1846,
+  "sequence_wraps": 8,
+  "inferred_missing_packets": 0,
+  "duplicate_sequences": 0,
+  "backward_or_reset_events": 0,
+  "packets_per_second": 8324.105525737365,
+  "expected_packets_per_second": 8327.550312283136
+}

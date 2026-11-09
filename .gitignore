@@ -12,3 +12,6 @@ xsim.dir/
 projects/fpga-gaussian-noise-generator/project/
 projects/fpga-gaussian-noise-generator/gaussian_output.txt
 projects/fpga-gaussian-noise-generator/math_unit_output.txt
+projects/fpga-gaussian-noise-generator/project_v3/
+projects/fpga-gaussian-noise-generator/pipeline_gaussian_q428.txt
+projects/fpga-gaussian-noise-generator/capture_v3*/

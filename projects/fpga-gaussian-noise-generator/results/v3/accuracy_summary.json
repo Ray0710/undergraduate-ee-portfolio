@@ -1,0 +1,49 @@
+{
+  "rtl_reference_pairs": 100000,
+  "rtl_reference_mismatches": 0,
+  "raw_aligned_prefix_bytes": 10,
+  "raw_aligned_suffix_bytes": 2,
+  "stats": {
+    "mean": [
+      0.001014718817726706,
+      0.0013965598134634185
+    ],
+    "population_variance": [
+      1.0021613021471871,
+      0.9990294294667476
+    ],
+    "same_pair_correlation": 0.001298470644941439,
+    "lag_one_correlation": [
+      -0.0002112179326722993,
+      -0.0002327630506982325
+    ],
+    "within_abs_threshold": {
+      "1": [
+        0.6828027926216166,
+        0.6826045781535621
+      ],
+      "2": [
+        0.9538901090980441,
+        0.9545748499876867
+      ],
+      "3": [
+        0.9972530277760537,
+        0.9972610364414296
+      ]
+    }
+  },
+  "hardware_reference": {
+    "matched_first_absolute_sequence": 3500084,
+    "reconstructed_time_after_reset_seconds": 420.3017536666667,
+    "pairs_compared": 499459,
+    "fixed_reference_mismatched_pairs": 0,
+    "max_abs_error": [
+      2.707876540331e-06,
+      2.750546789886954e-06
+    ],
+    "rmse": [
+      3.268354566924295e-07,
+      3.255267415046006e-07
+    ]
+  }
+}
