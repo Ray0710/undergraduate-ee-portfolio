@@ -24,7 +24,23 @@ The included follow-on implementation targets the Digilent Arty S7-25. This late
 | Arty S7-25 post-route timing | 12 MHz constraint met, with +55.164 ns setup slack and +0.048 ns hold slack |
 | Post-route utilization | 2,033 LUTs, 1,032 registers, 27 DSPs, and 4 block RAM tiles |
 
-The included behavioral and UART testbenches were rerun successfully in Vivado 2026.1. The resource and timing figures come from the recorded post-route build. Board-level UART measurements for this build are pending.
+The included behavioral and UART testbenches were rerun successfully in Vivado 2026.1. The resource and timing figures come from the recorded post-route build.
+
+### Arty S7-25 board measurement
+
+For the follow-on work, I generated a bitstream in Vivado and used Hardware Manager to connect to the Arty S7-25. The table below records a separate physical-board capture for the v2 build.
+
+| Measurement | Result |
+| --- | --- |
+| USB-UART settings | J10 USB, UART B, 115,200 baud, 8N1 |
+| Capture duration | 60.0005 s |
+| Complete packets | 57,489, with two Gaussian samples per packet |
+| Measured receive rate | 958.14 sample pairs/s |
+| Simulated receive-rate estimate at 12 MHz | 958.24 sample pairs/s |
+| Sequence gaps and duplicates in complete packets | 0 and 0 |
+| Measured sample variances | 0.99956 and 1.01076 |
+
+The decoder checked the header, 12-byte packet length, and sequence continuity across complete packets, including a 16-bit sequence wraparound. Partial bytes at the start and end were excluded. The sequence check covers packet order and missing sequence numbers. The protocol does not include a payload checksum.
 
 ## Run the included design
 
